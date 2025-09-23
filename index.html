@@ -1,14 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <script src="app.js" defer></script>
-    <link rel="stylesheet" href="style.css">
-    
-</head>
-<body>
-    
-</body>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Photo Gallery</h1>
+
+      <div class="gallery">
+        <div class="photoItem">
+          <img src="assets/tallPlant.webp" alt="Tall Plant" />
+          <div class="photoHeader">
+            <h3>Tall Plant</h3>
+          </div>
+        </div>
+
+        <div class="photoItem">
+          <img src="assets/branch.jpg" alt="branch" />
+          <div class="photoHeader">
+            <h3>Branch</h3>
+          </div>
+        </div>
+
+        <div class="photoItem">
+          <img src="assets/smallPlant.jpg" alt="Small Plant" />
+          <div class="photoHeader">
+            <h3>Small Plant</h3>
+          </div>
+        </div>
+
+        <div class="photoItem">
+          <img src="assets/heartPlant.jpg" alt="Heart Plant" />
+          <div class="photoHeader">
+            <h3>Heart Plant</h3>
+          </div>
+        </div>
+      </div>
+
+      <div class="lightboxContainer" id="lightbox">
+        <div class="closeBtn">X</div>
+        <div class="lightboxContent">
+          <img class="lightboxImage" src="" alt="" />
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
