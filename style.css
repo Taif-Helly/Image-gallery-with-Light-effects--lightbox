@@ -51,8 +51,11 @@ h1 {
 }
 
 .lightboxContainer {
-  display: none;
+  /*display: none; */
+  opacity: 0;
+  visibility: hidden;
   position: fixed;
+  transition: opacity 0.7s ease; /* Smooth transitions för fade-in/out */
   z-index: 1;
   top: 0;
   left: 0;
@@ -61,6 +64,13 @@ h1 {
   background-color: rgba(0, 0, 0, 0.7);
   backdrop-filter: blur(5px);
 }
+
+
+.lightboxContainer.active {
+  opacity: 1;;
+  visibility: visible;;
+}
+
 
 .lightboxContent {
   position: relative;
@@ -90,6 +100,3 @@ h1 {
   cursor: pointer;
 }
 
-.lightboxContainer.active {
-  display: block;
-}
