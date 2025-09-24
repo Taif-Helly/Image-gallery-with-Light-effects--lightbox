@@ -4,13 +4,9 @@ const lightboxImage = document.querySelector(".lightboxImage");
 const closeBtn = document.querySelector(".closeBtn");
 
 gallery.addEventListener("click", function (event) {
-  const clickedPhoto = event.target.closest(".photoItem");
-  console.log(clickedPhoto);
+  const clickedPhoto = event.target.src;
   if (clickedPhoto) {
-    console.log("CLICKED ON PHOTO");
-    const img = clickedPhoto.querySelector("img");
-    lightboxImage.src = img.src;
-    lightboxImage.alt = img.alt;
+    lightboxImage.src = clickedPhoto;
     lightbox.classList.add("active");
   }
 });
