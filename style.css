@@ -28,7 +28,15 @@ h1 {
 .photoItem {
   background: white;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.5s ease, box-shadow .3s ease; /* hovering on pic, scale transition */
+
   /* background-color: black; */
+}
+
+.photoItem:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 25px rgba(37, 94, 1, 0.3); /* Green hover shadow */
 }
 
 .photoItem img {
