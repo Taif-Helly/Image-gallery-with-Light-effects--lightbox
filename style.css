@@ -3,25 +3,26 @@
   padding: 0;
   box-sizing: border-box;
 }
+/* reset to default value */
 
 .container {
   max-width: 900px;
   margin: 0 auto;
-  /* background-color: red; */
+  
 }
 /* Grid*/
 .gallery {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 30px;
-  /* background-color: blue; */
+  
 }
 
 h1 {
   text-align: center;
   margin: 40px;
   color: #000;
-  /* background-color: green; */
+  
 }
 
 .photoItem {
