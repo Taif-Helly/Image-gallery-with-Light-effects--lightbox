@@ -8,6 +8,10 @@ gallery.addEventListener("click", function (event) {
   const clickedPhoto = event.target.src;
 
   if (clickedPhoto) {
+    nextPhoto = Array.from(gallery.children).indexOf(
+      event.target.parentElement
+    );
+    console.log(nextPhoto);
     lightboxImage.src = clickedPhoto;
     lightbox.classList.add("active");
   }
