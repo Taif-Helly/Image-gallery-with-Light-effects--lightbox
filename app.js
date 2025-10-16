@@ -3,9 +3,8 @@ const lightbox = document.getElementById("lightbox");
 const lightboxImage = document.querySelector(".lightboxImage");
 const closeBtn = document.querySelector(".closeBtn");
 let nextPhoto = 0;
-
-gallery.addEventListener("click", function (event) {
-  const clickedPhoto = event.target.src;
+gallery.addEventListener("click", function (e) {
+  const clickedPhoto = e.target.src;
 
   if (clickedPhoto) {
     nextPhoto = Array.from(gallery.children).indexOf(
@@ -25,7 +24,7 @@ closeBtn.addEventListener("click", function () {
 // CLOSE WHEN CLICKING ANYWHERE
 lightbox.addEventListener("click", function (event) {
   lightbox.classList.remove("active");
-});
+}); 
 
 // CLOSE WITH ESC KEY AND GO LEFT/RIGHT WITH ARROW KEYS
 document.addEventListener("keydown", function (event) {
